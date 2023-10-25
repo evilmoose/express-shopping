@@ -1,4 +1,4 @@
-import items from "../fakeDb";
+import items from "../fakeDb.js";
 
 class Item {
     constructor(name, price) {
