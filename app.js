@@ -1,5 +1,5 @@
 import express from 'express'
-import routes from './routes/items'
+import routes from './routes/items.js'
 import ExpressError from './expressError.js';
 
 const app = express();
