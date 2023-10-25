@@ -1,9 +1,12 @@
 import express from 'express'
-import ExpressError from './expressError';
+import routes from './routes/items'
+import ExpressError from './expressError.js';
 
 const app = express();
 
 app.use(express.json());
+
+app.use("/items", routes);
 
 app.use((req, res, next) => {
     return new ExpressError("Not Found", 404);
